@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   
+}
+
+#cal{
+    padding:20px;
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 5%;
+    box-shadow: 10px 20px 40px aqua ;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: red;
+}
+
+.box{
+    margin-left: 50px;
+    
+}
+
+.b{
+    font-size: x-large;
+    margin-left: 10px;
+    width: 50px;
+}

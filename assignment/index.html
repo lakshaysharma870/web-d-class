@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function add(operarion){
+            let a =parseInt(document.getElementById("t1").value);
+            let b =parseInt(document.getElementById("t2").value);
+            
+            switch(operarion){
+                case '+' : document.getElementById("t3").value=a+b;
+                break;
+                case '-' : document.getElementById("t3").value=a-b;
+                break;
+                case '*' : document.getElementById("t3").value=a*b;
+                break;
+                case '/' : document.getElementById("t3").value=a/b;
+                break;
+
+            }
+            
+
+        }
+    </script>
+
+</head>
+<body>
+        <div id="main">
+            <div id="cal">
+                <form>
+                    <label>n1:</label><br>
+                    <input class="box" id="t1" type="text" ><br>
+                    <label>n2:</label><br>
+                    <input class="box" id="t2" type="text"><br>
+                    <label>result:</label><br>
+                    <input class="box" id="t3" type="text"><br>
+                    <br><br>
+                    <div id="op">
+                        <input class="b" value="+" type="button" onclick="add('+')">
+                        <input class="b" value="-" type="button"  onclick="add('-')">
+                        <input class="b" value="*" type="button" onclick="add('*')">
+                        <input class="b" value="/" type="button" onclick="add('/')">
+                    </div>
+                    
+
+                </form>
+            </div>
+        </div>
+</body>
+</html>
